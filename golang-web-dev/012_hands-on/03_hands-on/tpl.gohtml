@@ -7,11 +7,12 @@
 <body>
 
 {{range .}}
-{{.Fall.Term}}{{.AcaYear}}</br>
-{{.Fall.Courses}}</br>
-{{.Spring.Term}}{{.AcaYear}}</br>
-{{.Spring.Courses}}
-
+    {{.Region}}
+    {{range .Hotels}}
+        {{.Name}}<br>
+        {{.Address}} {{.City}} {{.Zip}}<br>
+    {{end}}
 {{end}}
+
 </body>
 </html>
